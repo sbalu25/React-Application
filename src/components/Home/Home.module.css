@@ -1,0 +1,31 @@
+.login{
+    height:90%;
+    width:90%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    margin:auto
+}
+.divider{
+    display:flex;
+    flex-direction: column;
+    justify-content: center center;
+}
+.column{
+    margin:10px;
+}
+.right_pane{
+    background-image: url("../../assets/hospital.webp");
+    height:90vh;
+    background-position: center;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.button{
+    background-color: #cae5f2 !important;
+    color:black !important;
+}
+
+
