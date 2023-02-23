@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Prescriptions from "../Prescriptions";
 import { Link, NavLink } from "react-router-dom";
@@ -12,7 +11,7 @@ function AdminDashBoard() {
         <div className="w-100">
             <TopNavigation />
             <Row>
-                <Users/>
+                <Users />
             </Row>
             {/* <Tabs>
                 <TabList>
