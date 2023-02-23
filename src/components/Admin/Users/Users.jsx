@@ -14,27 +14,27 @@ function Users() {
         getUsers()
     }, [])
     return (
-        <div>
-        <Container>
-            <Row>
-                <Col className="bold">First Name</Col>
-                <Col>Last Name</Col>
-                <Col>Mobile Number</Col>
-                <Col>Email</Col>
-                <Col>Role</Col>
-            </Row>
-        </Container>
-        <Container className="w-100"> 
-            {users?.map((user) =>
-                <Row className="w-100" key={user.id}>
+        <div className="w-100 m-3">
+            <Container>
+                <Row>
+                    <Col className="bold">First Name</Col>
+                    <Col>Last Name</Col>
+                    <Col>Mobile Number</Col>
+                    <Col>Email</Col>
+                    <Col>Role</Col>
+                </Row>
+            </Container>
+            <Container className="w-100">
+                {users?.map((user) =>
+                    <Row className="w-100" key={user.id}>
                         <Col sm="3">{user.first_name}</Col>
                         <Col sm="2">{user.last_name}</Col>
                         <Col sm="2">{user.mobile_number}</Col>
                         <Col sm="3">{user.email}</Col>
                         <Col sm="1">{user.role}</Col>
-                </Row>
-            )}
-        </Container>
+                    </Row>
+                )}
+            </Container>
         </div>
 
 
