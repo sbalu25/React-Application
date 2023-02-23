@@ -11,6 +11,7 @@ code {
 }
 body {
   font-family: "Roboto";
+  background-color:linear-gradient(to right bottom, #40abe173, #9dbacb3b)
 }
 
 .button{

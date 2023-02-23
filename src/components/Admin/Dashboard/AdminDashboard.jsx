@@ -3,24 +3,18 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Prescriptions from "../Prescriptions";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Users from "../Users";
+import TopNavigation from "../TopNavigation";
 
 function AdminDashBoard() {
     return (
-        <div>
-            <Container>
-                <Row>
-                    <Col><Link>Users</Link></Col>
-                    <Col>Users</Col>
-                    <Col>Users</Col>
-                    <Col>Users</Col>
-                    <Col>Users</Col>
-                    <Col>Users</Col>
-                    <Col>Users</Col>
-                </Row>
-            </Container>
-            <Tabs>
+        <div className="w-100">
+            <TopNavigation />
+            <Row>
+                <Users/>
+            </Row>
+            {/* <Tabs>
                 <TabList>
                     <Tab>Users</Tab>
                     <Tab>Appointments</Tab>
@@ -33,13 +27,13 @@ function AdminDashBoard() {
                     <Tab>Insurance Claims</Tab>
                 </TabList>
                 <TabPanel>
-                    <Users/>
+                    <Users />
                 </TabPanel>
                 <TabPanel>
                     <h2>Appointments Details</h2>
                 </TabPanel>
                 <TabPanel>
-                    <Prescriptions/>
+                    <Prescriptions />
                 </TabPanel>
                 <TabPanel>
                     <h2>Diagnosis Details</h2>
@@ -59,7 +53,7 @@ function AdminDashBoard() {
                 <TabPanel>
                     <h2>Insurance Claims Details</h2>
                 </TabPanel>
-            </Tabs>
+            </Tabs> */}
         </div>
     )
 }

@@ -1,11 +1,16 @@
 import { useEffect } from "react"
+import TopNavigation from "../TopNavigation"
 
-function Prescriptions(){
-    useEffect(()=>{
+function Prescriptions() {
+    useEffect(() => {
         console.log("Prescriptions")
     })
     return (
-        <div>Prescriptions List</div>
+        <>
+            <TopNavigation />
+            <div>Prescriptions List</div>
+        </>
+
     )
 }
 export default Prescriptions
